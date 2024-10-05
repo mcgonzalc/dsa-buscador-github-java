@@ -1,9 +1,12 @@
 package cat.mcgonzalc.buscadorgithubjava;
 
 import java.util.List;
+
+import io.reactivex.rxjava3.core.Observable;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
+
 
 public interface GitHubAPI {
 
@@ -13,5 +16,5 @@ public interface GitHubAPI {
 
     //Funció que asignem per buscar els repositoris d'un usuari de GitHub
     @GET("{username}/repos")
-    Call<List<Usuari>> buscarRepositoris(@Path("username") String nomusuari);
+    Call<List<Repositori>> buscarRepositoris(@Path("username") String nomusuari);
 }

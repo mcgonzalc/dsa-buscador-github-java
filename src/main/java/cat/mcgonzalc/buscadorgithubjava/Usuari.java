@@ -7,11 +7,9 @@ import com.google.gson.annotations.SerializedName;
 public class Usuari {
 
     @SerializedName("login")
-    @Expose
     private String login;
 
     @SerializedName("repos_url")
-    @Expose
     private String repos_url;
 
     Usuari(String login, String repos_url)
